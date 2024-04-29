@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.726), rgba(128, 128, 128, 0.753), rgb(48, 48, 48));
+            background-attachment: fixed;
+            font: 550 25px Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            font: 500 23px Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: aliceblue;
+            font-weight: 550;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        input:hover {
+            background: black;
+            font-size: 30px;
+        }
+
+        #conf {
+            width: 43px;
+            height: 36px;
+            font-size: 19px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #652637;
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            margin-top: 90px;
+            font: italic 550 30px Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            font: 500 20px Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Seu País é: <input type="text" name="pais" id="pais"> <input type="button" value="&#x1F50D" id="conf" onclick="clicar()">
+    <div id="res">Resultado...</div>
+
+    <script>
+        function clicar() {
+            var op = window.document.querySelector('input#pais').value;
+            var resul = window.document.querySelector('div#res');
+            resul.innerText = `Você é do ${op}.`
+            if(op === 'Brasil') {
+                resul.innerText += ` Você é Brasileiro!`
+            } else {
+                resul.innerText += ' Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>

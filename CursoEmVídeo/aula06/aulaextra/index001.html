@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font: normal 15pt Arial;
+        }
+        h1{
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1><ins>Daqui pra frente é só JavaScript &#8595</ins></h1>
+    <script>
+        window.alert('O criador só está testando coisas.')
+        var n1 = Number.parseFloat(window.prompt('Digíte um número:'))
+        var n2 = Number.parseFloat(window.prompt('Digíte outro número:'))
+        var s = n1 + n2
+        var nome = window.prompt('Qual o seu nome?')
+        window.confirm(`Seu nome é ${nome}?`)
+        document.write(`Olá <strong>${nome}</strong>, seja bem vindo ao site <strong>Extra</strong> do criador. Aqui vão alguns testes:<br>`)
+        document.write(`A soma dos números ${n1} e ${n2} é igual a: ${s}; <br>`)
+        document.write(`Seu nome em maiúsculas é: ${nome.toUpperCase()}; <br>`)
+        document.write(`Seu nome em minúsculas é: ${nome.toLowerCase()}; <br>`)
+        document.write(`Seu nome tem ${nome.length} letras.`)
+    </script>
+    <p>
+        Pelo visto, o site e suas funcionalidades estão em dia.
+    </p>
+</body>
+</html>

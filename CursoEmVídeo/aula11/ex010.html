@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais if/else</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.726), rgba(128, 128, 128, 0.753), rgb(48, 48, 48));
+            background-attachment: fixed;
+            font: 550 25px Arial, Helvetica, sans-serif;
+        }
+
+        input#txtvel {
+            width: 70px;
+        }
+
+        input {
+            font: 500 23px Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: aliceblue;
+            font-weight: 550;
+            border-radius: 5px;
+        }
+
+        input:hover {
+            background: black;
+            font-size: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #652637;
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            margin-top: 90px;
+            font: italic 550 30px Arial, Helvetica, sans-serif;
+        }
+
+        #f {
+            font: 600 27px Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            font: 500 20px Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"><strong id="f">Km/h</strong>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">Resultado...</div>
+    <h2>PS: Você escolhe suas consequências!</h2>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong>.`
+
+            if(vel > 60) {
+                res.innerHTML += `<p>Você não está dentro dentro do limíte de velocidade. Logo chegará uma <strong>multa</strong> em sua casa.</p>`
+            } else {
+                res.innerHTML += `Continue sempre dentro do <strong>limite</strong>.`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, #a7e8d2, #3c6d5d);
+    background-attachment: fixed;
+    font: 500 18px Arial;
+    color: #3a2935;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: #f0f8ffdc;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #0000006b;
+    padding: 15px;
+    width: 500px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
