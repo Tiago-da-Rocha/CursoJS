@@ -33,5 +33,17 @@ var total = conversao(valorReal, cotacao);
 alert(`O valor em real é R$${valorReal} e o valor em dólar é U$${total}`);*/
 
 function alertaHello() {
-    alert("Hello")
+    alert("Hello World!")
 }
+
+/*function paraCelcius(valorFarenheit) {
+    return (5 / 9) * (valorFarenheit - 32);
+}
+
+var c = paraCelcius(77);
+
+window.alert(`A temperatura é de ${c}º graus celcius.`)*/
+
+/*function minhaFuncao() {
+    var x = 2;
+}*/

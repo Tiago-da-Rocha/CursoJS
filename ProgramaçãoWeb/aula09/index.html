@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula09</title>
+    <style>
+        body {
+            font: italic 500 18px Arial;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #code {
+            background-color: black;
+            color: white;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1><ins>Objetos Em JavaScript</ins></h1>
+    <h2>OBJETOS</h2>
+    <p>
+        <ins>Objetos</ins> são basicamente variáveis com muitos valores dentro.
+    </p>
+
+    <p>
+        Ex: <code id="code">
+            const carro = {marca: "Ford", modelo: "Ka", ano: 2015}
+        </code>
+    <p>
+        Os valores dentro de um <ins>objeto</ins> são chamdos de <ins>propriedades</ins>.
+    </p>
+
+    <p>
+        <ins>Objetos</ins> também podem ter <ins>métodos</ins>. Um <ins>método</ins> é uma função colocada dentro de uma <ins>propriedade</ins>.
+    </p>
+    <p id="objeto"></p>
+    <button onclick="carro.buzina()">Clique Aqui!</button>
+
+    <script src="js/objetos.js"></script>
+</body>
+</html>
