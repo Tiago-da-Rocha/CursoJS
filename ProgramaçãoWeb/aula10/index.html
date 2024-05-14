@@ -7,58 +7,76 @@
     <style>
         body {
             font: italic 500 18px Arial;
+            background-color: rgb(195, 255, 235);
+        }
+
+        div#text {
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+            width: 500px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px white;
         }
 
         h1 {
             text-align: center;
         }
+
+        div input#teste {
+            background-color: rgb(0, 255, 0);
+            font: normal 500 18px Arial;
+            width: 130px;
+            height: 70px;
+            display: block;
+            margin: auto;
+        }
+
+        input#i {
+            display: block;
+            margin: 50px auto;
+            font-size: 40px;
+            width: 300px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0px 0px 15px white;
+        }
     </style>
 </head>
 <body>
     <h1><ins>Eventos Em JavaScript</ins></h1>
-    <h2>Eventos</h2>
-    <p>
-        Eventos são ações disparadas pela interação dos usuários na página. É o correto manejo desses eventos que tornam as páginas interativas e dinâmicas.
-    </p>
+    <div id="text">
+        <h2>Eventos</h2>
+        <p>
+            Eventos são ações disparadas pela interação dos usuários na página. É o correto manejo desses eventos que tornam as páginas interativas e dinâmicas.
+        </p>
+        <p>
+            Existem muitos eventos. Veja os mais utilizados:
+        </p>
+        
+        <ul>
+            <li> <strong>onclick</strong>  -> Disparado quando recebe um clique.</li>
+            <li> <strong>ondblclick</strong> -> Disparado quando recebe um clique duplo.</li>
+            <li> <strong>onmouseover</strong> -> Disparado quando o mouse está sobre.</li>
+            <li> <strong>onmouseout</strong> -> Disparado quando o mouse é movido para fora do elemento.</li>
+            <li> <strong>onmousemove</strong> -> Disparado quando o mouse é movido no elemento.</li>
+            <li> <strong>onmousedown</strong> -> Disparado quando o clique do botão foi pressionado.</li>
+            <li> <strong>onmouseup</strong> -> Disparado quando o clique do botão é liberado.</li>
+            <li> <strong>onfocus</strong> -> Disparado quando o elemento recebe o foco. Válido para input, s</li>
+            <li> <strong>onchange</strong> -> Disparado quando existe uma mudança no conteúdo. "Ao mudar".</li>
+            <li> <strong>onblur</strong> -> Disparado quando o elemento perde o foco.</li>
+            <li> <strong>onkeydown</strong> -> Disparado quando uma tecla é pressionada.</li>
+            <li> <strong>onkeypress</strong> -> Disparado quando uma tecla é pressionada e solta.</li>
+            <li> <strong>onekeyup</strong> -> Disparado quando uma tecla é solta sobre um elemento.</li>
+            <li> <strong>onload</strong> -> Disparado quando a página terminou de ser carregada. Body.</li>
+            <li> <strong>onresize</strong> -> Disparado quando há um redimencionamento da janela.</li>
+        </ul>
+        <input type="button" value="Clique Aqui" onclick="eventoClick0()" id="teste" ondblclick="eventoClick1()">
+    </div>
 
-    <p>
-        Existem muitos eventos. Veja os mais utilizados:
-    </p>
-     
-    <ul>
-        <li> <strong>onclick</strong>  -> Disparado quando recebe um clique.</li>
-
-        <li> <strong>ondblclick</strong> -> Disparado quando recebe um clique duplo.</li>
-
-        <li> <strong>onmouseover</strong> -> Disparado quando o mouse está sobre.</li>
-
-        <li> <strong>onmouseout</strong> -> Disparado quando o mouse é movido para fora do elemento.</li>
-
-        <li> <strong>onmousemove</strong> -> Disparado quando o mouse é movido no elemento.</li>
-
-        <li> <strong>onmousedown</strong> -> Disparado quando o clique do botão foi pressionado.</li>
-
-        <li> <strong>onmouseup</strong> -> Disparado quando o clique do botão é liberado.</li>
-
-        <li> <strong>onfocus</strong> -> Disparado quando o elemento recebe o foco. Válido para input, s</li>
-
-        <li> <strong>onchange</strong> -> Disparado quando existe uma mudança no conteúdo. "Ao mudar".</li>
-
-        <li> <strong>onblur</strong> -> Disparado quando o elemento perde o foco.</li>
-
-        <li> <strong>onkeydown</strong> -> Disparado quando uma tecla é pressionada.</li>
-
-        <li> <strong>onkeypress</strong> -> Disparado quando uma tecla é pressionada e solta.</li>
-
-        <li> <strong>onekeyup</strong> -> Disparado quando uma tecla é solta sobre um elemento.</li>
-
-        <li> <strong>onload</strong> -> Disparado quando a página terminou de ser carregada. Body.</li>
-
-        <li> <strong>onresize</strong> -> Disparado quando há um redimencionamento da janela.</li>
-    </ul>
-
-    <button onclick="eventoClick()">Clique Aqui!</button>
-
+    <input type="text" id="i" onfocus="foco()" value="Clique!" placeholder="Digite algo..." onblur="eventoClick0()">
+    
+    
     <script src="js/eventos.js"></script>
 </body>
 </html>

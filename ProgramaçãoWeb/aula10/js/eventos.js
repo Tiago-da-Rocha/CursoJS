@@ -36,8 +36,18 @@ Existem muitos eventos. Veja os mais utilizados:
 
 */
 
-function eventoClick() {
+function eventoClick0() {
     //window.alert("Você acionou um evento de Click!")
-    window.document.body.style.backgroundColor = 'aqua';
-    window.document.body.style.color = 'red'
+    window.document.body.style.backgroundColor = 'black';
+    window.document.body.style.color = 'red';
+};
+
+function eventoClick1() {
+    //window.alert("Você acionou um evento de Click!")
+    window.document.body.style.backgroundColor = 'rgb(195, 255, 235)';
+    window.document.body.style.color = 'black';
+};
+
+function foco() {
+    document.getElementById("i").value = "";
 }
