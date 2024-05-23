@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        div {
+            background-color: white;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            width: 310px;
+            margin: auto;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        p {
+            width: 300px;
+            margin: auto;
+            text-align: justify;
+            display: block;
+            text-indent: 30px;
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.421);
+        }
+
+        button {
+            width: 82px;
+            height: 43.1px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.421);
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        p#erro {
+            text-indent: 0px;
+            text-align: none;
+            color: red;
+        }
+    </style>
+</head>
+<body onload="diahoje()">
+    <div>
+        <h1><ins>Switch</ins></h1>
+        <p>É usado para realizar diferentes ações com base em diferentes condições no mesmo bloco de verificação. Caso a condição não seja compatível, não será executada e o valor padrão será acionado.</p>
+        <p>A estrutura switch trabalha com valores(variáveis) que sejam idênticos ás condições exigidas. ex: expressão === case.</p>
+        <br>
+        <input type="text" id="test" placeholder="Digite uma cor..." required autofocus>
+        <button onclick="verificador()">Verificar</button>
+        <P id="erro"></P>
+
+        <script src="js/switch.js"></script>
+    </div>
+</body>
+</html>

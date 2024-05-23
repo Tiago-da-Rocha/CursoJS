@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 15</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        div {
+            background-color: white;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            width: 380px;
+            margin: auto;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        div > h1 {
+            font-size: 26px;
+        }
+
+        p {
+            width: 350px;
+            margin: auto;
+            text-align: justify;
+            display: block;
+            text-indent: 30px;
+        }
+
+        button {
+            width: 82px;
+            height: 43.1px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.421);
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        p#input {
+            text-align: center;
+        }
+
+        p#res {
+            text-indent: 0px;
+            color: rgb(2, 96, 178);
+            width: 95vw;  
+        }
+    </style>
+</head>
+<body onload="diahoje()">
+    <div>
+        <h1>Laço de Repetição <ins>For</ins></h1>
+        <p>
+            Laços de repetição oferecem um jeito fácil e rápido de executar uma ação repetidas vezes. Você tem o controle de quantas vez será repetida e mostrada na tela a ação desejada. "For" é uma das formas de se ter uma estrutura de repetição em seu código.
+        </p>
+    </div>
+    <!--
+        <form action="#" style="padding: 10px;">
+            <p id="input">
+                <select name="ano" id="ano">
+                        <option selected disabled>Selecione o ano</option>
+                </select>
+            </p>
+            <p id="input">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    -->
+    
+    <p id="res"></p>  
+
+    <script src="js/for.js"></script>
+</body>
+</html>
