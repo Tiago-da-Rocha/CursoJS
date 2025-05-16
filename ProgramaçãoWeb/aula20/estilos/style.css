@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 232, 204);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(132, 103, 68);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
+
+input#idtarefa {
+    height: 70px;
+    width: 80%;
+    padding: 15px;
+    font-size: 25px;
+    border: 2px solid rgb(0, 197, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.300);
+}
+
+button#adicionar {
+    background-color: rgb(0, 197, 0);
+    width: 20%;
+    height: 70px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 197, 0);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.300);
+}
+
+button#adicionar:hover {
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+}
+
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    margin-top: 40px;
+    width: 90%;
+}
+
+div.campo {
+    background-color: white;
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.388);
+}
+
+div.campoEmoji {
+    flex: 20%;
+    text-align: center;
+}
+
+div.campoSaida {
+    flex: 55%;
+
+}
+
+div.campoDeletar {
+    flex: 25%;
+    text-align: center;
+}
+
+button#deletar {
+    background-color: red;
+    font-size: 14px;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+button#deletar:hover {
+    background-color: rgb(195, 0, 0);
+    color: white;
+    border: 2px solid white;
+}
+
+/* Clicado */
+
+.campo.clicado {
+    background-color: rgb(165, 255, 178);
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.388);
+    cursor: pointer;
+}
+
+span.mdi-check-circle {
+    color: rgb(0, 197, 0);
+    font-size: 25px;
+}
+
+div.clicado div.campoSaida {
+    color: rgb(102, 102, 102);
+    text-decoration: line-through;
+}
